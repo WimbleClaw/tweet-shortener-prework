@@ -21,7 +21,7 @@ tweet.each_char do |word|
   end
 
 end
-new_tweet
+new_tweet.join
 
 # #   new_tweet.push(word)
 
