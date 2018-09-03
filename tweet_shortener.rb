@@ -15,11 +15,13 @@ substitutes = {
 new_tweet = []
 tweet.each_char do |word|
   if word == substitutes.keys
-      word.sub!(substitutes.value)
+      new_tweet.push(word.sub!(substitutes.value))
+  else 
+    new_tweet.push(word)
   end
 
 end
-
+new_tweet
 
 # #   new_tweet.push(word)
 
