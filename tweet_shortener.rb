@@ -1,3 +1,4 @@
+require pry 
 
 def word_substituter (tweet)
   
@@ -15,6 +16,7 @@ substitutes = {
 new_tweet = []
 tweet.each_char do |word|
   if word == substitutes.keys
+    binding.pry
       new_tweet.push(word.sub!(substitutes.value))
   else 
     new_tweet.push(word)
